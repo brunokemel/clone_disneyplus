@@ -1,5 +1,8 @@
 @use 'hero';
 @use '_variaveis';
+@use 'shows';
+
+
 
 @font-face {
     font-family: "avenir";
@@ -17,13 +20,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Avenir', sans-serif; ;
 }
 
 
 
 body {
     background-color: variaveis.$corDeFundo;
-    font-family: 'avenir' sans-serif; ;
 }
 
 @mixin text ($fontSize: 16px) {
@@ -52,7 +55,7 @@ body {
 .link-text {
     @include text(18px);
     color: variaveis.$corTextoSecundario;
-    text-decoration: un;
+    text-decoration: underline
 }
 
 .tittle--big {
