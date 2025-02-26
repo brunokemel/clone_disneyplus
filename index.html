@@ -7,11 +7,27 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#" class="button button--secondary">Assine agora</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#" class="button button--dark">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
     <section class="hero">
         <div class="hero__content">
-            <h1 class="hero__content__branding">
+            <div class="hero__content__branding">
                 <img src="./dist/images/disneyplus.svg" alt="Disney+">
-            </h1>
+            </div>
             <h3 class="tittle--small">
                 As melhores histórias em um só lugar.
             </h3>
@@ -19,27 +35,28 @@
                 <a href="#" class="link-text">Assinar o Disney+</a>
                 <br>
                 <span class="text">
-                    R$ 27,90/mês ou R$ 279,90/ ano à vista 
+                    R$ 27,90/mês o R$ 279,90/ano à vista*
                 </span>
             </p>
             <ul class="hero__content__combos">
                 <li class="hero__content__combos__combo">
-                    <img src="./dist/images/logos/disney_star_plus.png" alt="Disney+ - Star Plus- Combo">
-                    <button class="button">Assine agora</button>
+                    <img src="./dist/images/logos/disney_star_plus.png" alt="Disney+ - Star+ - Combo+">
+                    <button class="button">Assine Agora</button>
                     <span class="text">R$ 45,90/mês*</span>
                 </li>
-
                 <li class="hero__content__combos__combo">
-                    <img src="./dist/images/logos/disney_star_plus.png" alt="Disney+ - Star Plus- Combo">
-                    <button class="button">Assine agora</button>
+                    <img src="./dist/images/logos/disney_star_plus.png" alt="Disney+ - Star+ - Combo+">
+                    <button class="button">Assine Agora</button>
                     <span class="text">R$ 45,90/mês*</span>
                 </li>
             </ul>
             <p class="text--small">
-                "o preço variará de acordo com a assinatura seja feita em outras plataformas."
+                *O preço pode variar caso a assinatura seja feita através de outras plataformas.
             </p>
         </div>
     </section>
+
+
     <section class="shows">
         <nav class="shows__tabs">
             <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is--active">
