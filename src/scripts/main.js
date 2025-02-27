@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             escondeTodasAbas();
             aba.classList.add('shows__list--is-active');
             removeBotaoAtivo();
-            botao.target.classList.add('shows__tabs__button--is-active');
+            botao.target.classList.add('shows__tabs__button--is--active');
         })
     }
 
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function ocultaElementosDoHeader() {
     const header = document.querySelector('header');
-    header.classList.add('header--is-hidden');
+    header.classList.add('header--is--hidden');
 }
 
 function exibeElementosDoHeader() {
@@ -44,7 +44,7 @@ function exibeElementosDoHeader() {
 }
 
 function abreOuFechaResposta(elemento) {
-    const classe = 'faq__questions__item--is-open';
+    const classe = 'faq__questions__item--is--open';
     const elementoPai = elemento.target.parentNode;
 
     elementoPai.classList.toggle(classe);
@@ -54,7 +54,7 @@ function removeBotaoAtivo() {
     const buttons = document.querySelectorAll('[data-tab-button]');
 
     for (let i = 0; i < buttons.length; i++) {
-        buttons[i].classList.remove('shows__tabs__button--is-active');
+        buttons[i].classList.remove('shows__tabs__button--is--active');
     }
 }
 
